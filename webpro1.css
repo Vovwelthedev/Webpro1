@@ -1,180 +1,232 @@
-*{font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+/*
+Project Update: Improved page layout and styling
 
-.header{
-background-color: #1F2937;
-color: #f9faf8;
-padding: 0px 70px;
-padding-bottom: 70px;
+Changes made:
+- Updated hero section alignment and spacing
+- Made sections fit the browser screen better
+- Improved flexbox layout and positioning
+- Adjusted image sizes and borders
+- Cleaned up padding and margins
+- Improved call-to-action and footer appearance
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+/* HEADER / HERO */
+
+.header {
+  background-color: #1f2937;
+  color: #f9faf8;
+  min-height: 100vh;
+  padding: 20px 80px;
 }
 
 .hero {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 0px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.header-link, .header-link a {
-font-size: 10px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-flex-direction: row;
-gap: 20px;
-color: #e5e7eb;
-text-decoration: none;
+.hero img {
+  width: 100px;
+  height: 30px;
 }
+
+.header-link {
+  display: flex;
+  gap: 25px;
+}
+
+.header-link a {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 16px;
+}
+
 
 .header-text {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding-top: 50px;}
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  margin-top: 120px;
+}
 
 .header-subtext {
-padding: 0px 70px;
+  max-width: 450px;
 }
 
-.header-text h1{
-font-size: 30px;
-font-weight: 900;
-margin-bottom: 0px;
-max-width: 300px;
+.header-text h1 {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 15px;
 }
 
-.header-text p{
-font-size: 15px;
-margin-top: 0px;
-margin-bottom: 0px;
-max-width: 1000px;
-padding-left: 0px;
+.header-text p {
+  font-size: 18px;
+  color: #e5e7eb;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
-.header-text img{
-padding-right: 70px;
-margin-right: 0px;
+.header-text img {
+  width: 650px;
+  height: 200px;
+  object-fit: cover;
 }
 
-button, button a  {
-background-color: #3882f6;
-color: white;
-margin-top: 0px;
-border-radius: 5px;
-border: 3px;
-text-decoration: none;
-padding: 5px 5px;
-margin-top: 5px;
+
+button {
+  background-color: #3882f6;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 25px;
 }
+
+button a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+/* HTML SECTION */
 
 .section {
-background-color: #e5e7ea;
-display: flex;
-justify-content: space-between;
-align-items: center;
-flex-direction: column;
-padding: 0px 50px;
-padding-bottom: 70px;
+  background-color: #e5e7ea;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
 }
 
-h2{
-font-size: 36PX;
-font-weight: 900;
-color: #1F2937;
+
+.section h2 {
+  font-size: 36px;
+  color: #1f2937;
+  margin-bottom: 50px;
 }
 
-.section-image{
-display: flex;
-justify-content: center;
-gap: 50px;
+
+.section-image {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
 }
 
-.item {max-width: 150px;
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 10px;}
 
-.item img{
-width: 150px;
-height: 150px;
-border: 3px solid #3a6ab8;
-border-radius: 10px;
-object-fit: cover;
-margin: 0px;
+.item {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
+
+
+.item img {
+  width: 150px;
+  height: 150px;
+  border: 3px solid #3a6ab8;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+/* QUOTE */
 
 .quote {
-background-color: #696c70;
-padding: 80px 20px;
-display: flex;
-justify-content: center;
-margin-bottom: 0px;
+  background-color: #696c70;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
 }
 
-.quote-container{
-max-width: 800px;
-margin-top: 0 auto;
+
+.quote-container {
+  max-width: 800px;
 }
 
-.quote-text{
-font-size: 20px;
-font-weight: 300;
-font-style: italic;
-color: #1F2937;
+
+.quote-text {
+  font-size: 25px;
+  font-style: italic;
+  color: #1f2937;
+  line-height: 1.5;
 }
+
 
 .Author {
-text-align: right;
-font-weight: bold;
-margin-top: 15px;
-color: #1F2937;
+  text-align: right;
+  font-weight: bold;
+  margin-top: 20px;
 }
+
+
+/* CALL TO ACTION */
 
 .action {
-background-color: #e5e7ea;
-padding: 80px 20px;
-display: flex;
-justify-content: center;
+  background-color: #e5e7ea;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
 }
 
-.action-body{
-background-color: #3882f6;
-color: white;
-border-radius: 10px;
-padding: 30px 60px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-gap: 20px;
-max-width: 900px;
-width: 100%;
+
+.action-body {
+  background-color: #3882f6;
+  color: white;
+  border-radius: 10px;
+  padding: 40px 70px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 900px;
 }
+
 
 .action-text h4 {
-margin-bottom: 5px;
-font-size: 15px;
+  font-size: 22px;
+  margin-bottom: 5px;
 }
 
-.action-text p{
-margin-top: 0px;
-font-size: 15px;
+
+.action-text p {
+  font-size: 16px;
 }
+
 
 .action-body button {
-padding: 5px 25px;
-border: 2px solid white;
-background: transparent;
-color: white;
-border-radius: 8px;
-cursor: pointer;
-height: auto;
-flex-shrink: 0;
+  background: transparent;
+  border: 2px solid white;
 }
 
-.footer{
-background-color: #1F2937;
-color: white;
-padding: 1px 50px;
-display: flex;
-justify-content: center;
+
+.action-body button a {
+  color: white;
+}
+
+
+/* FOOTER */
+
+.footer {
+  background-color: #1f2937;
+  color: white;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
 }
